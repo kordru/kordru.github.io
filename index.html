@@ -2,25 +2,50 @@
 This is the hub of the entire thing, i'll probably swag this area up a little.
 I'll make this the best site on the entire interwebs! I'll show you all! >:D
 
--added favicon, we'll see if this works.. or not.
--sorted code out, it's easier to tell where stuff is now, y'know, for the dummies.
+-brand new index site, no more emptiness
+-cooler code.
+-buttons
+-CENTERING
 -->
 
 
 <html>
-  
-  
+
+
   <head>
     <title>KORDRU'S WEBZONE</title>
-    <link rel="favicon.ico">
+    <link href="favicon.ico" rel="shortcut" type="image/x-icon" />
   </head>
-  
-  
+
+
   <body>
-    <h1>Hello there!</h1>
-    <p>This will be my webzone!</p>
-    <p style="color:orange;font-size:15px;">..Eventually.</p>
+    <button onclick="document.location='img.html'">13 Alternations Of Kordru</button>
+
+    <center>
+      <a href="index.html">
+        <script type="text/javascript">
+
+          //this is where everything is at.
+          var kordruimg = "asset/kordru/";
+
+          //this will help us pick a number at random.
+          function getRandomInt(min, max) {
+            min = Math.ceil(min);
+            max = Math.floor(max);
+            return Math.floor(Math.random() * (max - min)) + min;
+            }
+
+            //this will create an image source using the image the computer picked for us.
+            document.write('<img src="' + kordruimg + getRandomInt(1, 13) + '.png">')
+        </script>
+      </a>
+
+      <h1 style="color:orange;font-size:20;">Hello there!</h1>
+      <p>This will be my webzone!</p>
+      <p style="color:orange;font-size:15px;">..Eventually.</p>
+    </center>
+
   </body>
-  
-  
+
+
 </html>
