@@ -1,33 +1,51 @@
+<!--
+Just a short experiment to see how this'll go.
+
+-Cleaned up, added some pizzazz to the code and the actual site.
+-Major improvements compared to the last commit...
+-->
+
 <html>
 
+
   <head>
-    <title>KORDRU VARIATION</title>
+    <title>13 VARIATIONS OF KORDRU!</title>
+    <link rel="favicon.ico">
   </head>
 
-    <body>
-      <h1>Woah, look! It's a- Variation of... My name..?</h1>
+
+  <body>
+    <h1 style="color:yellow;font-size:25px;">WOAH, AWESOME! IT'S A- a...</h1>
+
+<!---
+
+           Okay, here's my little cheat code here; We pray to god, long and hard...
+           ...And just hope that this HORRIBLE, MUMBLING RAGE BALL ACTUALLY WORKS!!
+
+                            (Intense Turbo Praying, Commence... NOW!)
+
+---->
+
+    <script type="text/javascript">
+
+      //this is where everything is at.
+       var kordruimg = "asset/kordru/";
+
+      //this will help us pick a number at random.
+       function getRandomInt(min, max) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+        return Math.floor(Math.random() * (max - min)) + min;
+        }
+
+     //this will create an image source using the image the computer picked for us.
+      document.write('<img src="' + kordruimg + getRandomInt(1, 13) + '.png">')
+    </script>
 
 
-        <!--
-        Okay, here's my little chef's secret; We pray to god, long and hard...
-        ...And just hope that this horrible mumbling rage ball actually does what it needs to do.
-        See ya' on the other side, friend!
-        -->
+    <p style="color:cyan;font-size:10px;">...a variation of my name.</p>
+    <p style="color:cyan;font-size:4px;">what a bummer.</p>
+  </body>
 
-      <script type="text/javascript">
-         var imlocation = "asset/kordru/";
-         var currentdate = 0;
-         var image_number = 0;
-         function getRandomInt(min, max) {
-          min = Math.ceil(min);
-          max = Math.floor(max);
-          return Math.floor(Math.random() * (max - min)) + min;
-          }
-          // Is it just me, or does my brain feel smoother..?
-          ////I might be correct, y'know, for having such a smooth brain..
-        document.write('<img src="' + imlocation + getRandomInt(1, 13) + '.png">')
-      </script>
-
-    </body>
 
 </html>
