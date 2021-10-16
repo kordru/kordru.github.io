@@ -22,9 +22,9 @@
           min = Math.ceil(min);
           max = Math.floor(max);
           return Math.floor(Math.random() * (max - min)) + min;
-        }
-        document.write('<img src="images/' + getRandomInt(1, 13) + '.png">')
-        document.write("<img src='" + imlocation + randomimage()+ "'>");
+          }
+          // Fixed possibly one of the DUMBEST syntax errors i've ever made.
+        document.write("<img src='" + imlocation + getRandomInt(1, 13) + '.png");
       </script>
 
     </body>
