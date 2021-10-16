@@ -1,2 +1,2 @@
 # kordru.github.io
-My webzone for all sorts of stuff; It's just a testing space.
+My webzone for all sorts of stuff. Really it's just a testing space.
