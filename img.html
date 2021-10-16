@@ -1,7 +1,8 @@
 <!--
 Just a short experiment to see how this'll go.
 
--extra bit of text
+-fixed text size
+-CENTERING
 -->
 
 <html>
@@ -14,38 +15,39 @@ Just a short experiment to see how this'll go.
 
 
   <body>
-    <h1 style="color:orange;font-size:35px;">WOAH, AWESOME! IT'S A- a...</h1>
 
-<!---
+    <center>
+      <h1 style="color:orange;font-size:35px;">WOAH, AWESOME! IT'S A- a...</h1>
 
-           Okay, here's my little cheat code here; We pray to god, long and hard...
-           ...And just hope that this HORRIBLE, MUMBLING RAGE BALL ACTUALLY WORKS!!
+  <!---
 
-                            (Intense Turbo Praying, Commence... NOW!)
+             Okay, here's my little cheat code here; We pray to god, long and hard...
+             ...And just hope that this HORRIBLE, MUMBLING RAGE BALL ACTUALLY WORKS!!
 
----->
+                              (Intense Turbo Praying, Commence... NOW!)
 
-    <script type="text/javascript">
+  ---->
+    <a href="index.html">
+      <script type="text/javascript">
 
-      //this is where everything is at.
-       var kordruimg = "asset/kordru/";
+        //this is where everything is at.
+         var kordruimg = "asset/kordru/";
 
-      //this will help us pick a number at random.
-       function getRandomInt(min, max) {
-        min = Math.ceil(min);
-        max = Math.floor(max);
-        return Math.floor(Math.random() * (max - min)) + min;
-        }
+        //this will help us pick a number at random.
+         function getRandomInt(min, max) {
+          min = Math.ceil(min);
+          max = Math.floor(max);
+          return Math.floor(Math.random() * (max - min)) + min;
+          }
 
-     //this will create an image source using the image the computer picked for us.
-      document.write('<img src="' + kordruimg + getRandomInt(1, 13) + '.png">')
-    </script>
+        document.write('<img src="' + kordruimg + getRandomInt(1, 13) + '.png">')
+      </script>
+    </a>
 
-
-    <p style="color:black;font-size:15px;">...a variation of my name.</p>
-    <p style="color:purple;font-size:13px;">what a bummer.</p>
-    <p style="color:purple;font-size:10px;">(maybe try refreshing?)</p>
-
+      <p style="color:black;font-size:15px;">...a variation of my name.</p>
+      <p style="color:purple;font-size:13px;">what a bummer.</p>
+      <p style="color:purple;font-size:8px;"><a href="img.html">(maybe try refreshing?)</a></p>
+    </center>
 
   </body>
 
